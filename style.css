@@ -115,6 +115,7 @@
 }
 .formulario{
     width: 100%;
+    margin-top: 5vw;
 
 }
 .formulario .letreiro{
@@ -126,7 +127,7 @@
     top: -14vw;
 }
 .formulario .formContent{
-    margin-top: 3vw;
+    margin-top: 8vw;
     color: #dd3e3d;
 }
 .formulario .formContent form input,.formulario .formContent form select,.formulario .formContent form button{
@@ -166,3 +167,55 @@
     background-color: green;
 }
 
+.formulario .formContent form #politicaPrivac{
+    color: black;
+    width: 27vw;
+    font-size: 0.8vw;
+    margin: 1vw auto;
+}
+.formulario .framePolitica{
+    background-color: white;
+    box-shadow:0px 0.5vw 2vw black ;
+    width: 40vw;
+    height: 37vw;
+    position: fixed;
+    left: 30vw;
+    top: 1.5vw;
+    padding: 2vw;
+    overflow-x:hidden;
+    overflow-y: scroll;
+    display: none;
+}
+.formulario .framePolitica{
+    scrollbar-color:#ffb400 rgb(224, 224, 224);
+}
+.formulario .framePolitica ul{
+    padding-left: 1.3vw;
+}
+.formulario .framePolitica h1{
+    margin: 1vw 0;
+    font-size: 2vw;
+}
+.formulario .framePolitica p{
+    margin: 1vw 0;
+}
+.formulario .framePolitica ul li{
+    list-style-type:square;
+}
+.LinksExternals{
+    display: flex;
+    justify-content: center;
+}
+.LinksExternals div.links{
+    background-color: #ffb400;
+    width: 13vw;
+    height: 3vw;
+    margin: 0.5vw;float: right;
+
+}
+.LinksExternals div.links p{
+    width: 10vw;
+    height: 3vw;
+    font-size: 0.8vw;
+    float: right;
+}
