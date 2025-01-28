@@ -150,6 +150,7 @@
         </div>
         <script>
             const btn = document.querySelector('#btnForm');
+            const cidade = document.querySelector('select');
             const politic = document.querySelector('.formulario .formContent form #politicaPrivac a');
             const frame = document.querySelector('.framePolitica');
             const display = window.getComputedStyle(frame, null).display;
@@ -162,8 +163,28 @@
 
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
-                window.location.href = "https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr";
-                console.log("clicou");
+
+                //window.location.href = "https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr";
+                console.log(cidade.selectedIndex);
+                switch(cidade.selectedIndex){
+                    case 0:
+                    window.location.href = "https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr";
+                    break;
+                    window.location.href = "https://chat.whatsapp.com/J7vSp3d4mwPBJaEmbStoPP";
+                    break;
+                    case 2 :
+                    window.location.href = "https://chat.whatsapp.com/Gnc21qUogOa5NYGzR033sM"; 
+                    break;
+                    case 3:
+                    window.location.href = "https://chat.whatsapp.com/JVkyD6mW1dXKNvUDAmjGDy";
+                    case 4:
+                    window.location.href = "https://chat.whatsapp.com/KZOO4rSC85aIF465IRE8Pg";
+                    break;
+                    case 5: 
+                    window.location.href = "https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr";
+                    break;                        
+
+                }
             })
 
 
