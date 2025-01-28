@@ -2,6 +2,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" type="imagex/png" href="./img/icon.ico">
         <link rel="stylesheet" type="text/css" href="./style.css" />
         <title>Da Praça</title>
@@ -27,9 +28,9 @@
                     <h1>Informe os seus dados para entrar <br>em nosso grupo de ofertas</h1>
                     <div class="formContent">
                         <form>
-                            <input name="nameInput" type="text" placeholder="Nome" required/>
-                            <input name="idadeInput" type="date" placeholder="Data de Nascimento" required/>
-                            <select required>
+                            <input name="nameInput" type="text" placeholder="Nome" />
+                            <input name="idadeInput" type="date" placeholder="Data de Nascimento" />
+                            <select >
                                 <option value="nulo" disabled selected>Cidade</option>
                                 <option value="Posto da Mata">Posto da Mata</option>
                                 <option value="Itabatã">Itabatã</option>
@@ -37,7 +38,7 @@
                                 <option value="Prado">Prado</option>
                                 <option value="Itamaraju">Itamaraju</option>
                             </select>
-                            <button type="submit" name="btnForm">Entrar no Grupo</button>
+                            <button type="submit" name="btnForm" id="btnForm" >Entrar no Grupo</button>
                             <p id="politicaPrivac">Ao clicar no botão, você declara estar de 
                                 acordo com o uso de seus dados conforme descrito em nossa <a>Política 
                                 de Privacidade.</a></p>
@@ -45,6 +46,7 @@
                     </div>
                 </div>
                 <div class="framePolitica">
+                    <div class="feixar">x</div>
                     <h1>Política de Privacidade</h1>
                     <h2>Introdução</h2>
                     <p>A sua privacidade é muito importante para nós. 
@@ -126,13 +128,45 @@
                         </p>
                 </div>
             </div>
+            <footer>
+                <div class="logo"></div>
+                <div class="links">
+                    <ul class="social">
+                        <li>Redes Sociais</li>
+                        <li>Youtube</li>
+                        <li>Instagram</li>
+                        <li>Facebook</li>
+                        <li>Whatsapp</li>
+                    </ul>
+                    <ul class="legislacao">
+                        <li>Trabalhe conosco</li>
+                        <li>Relatorio de Transparencia <br>Salarial Prado</li>
+                        <li>Relatorio de Transparencia <br>Salarial Posto da Mata</li>
+                        <li>Relatorio de Transparencia <br>Salarial Itabatã</li>
+                    </ul>
+                </div>
+            </footer>
 
-            <div class="LinksExternals">
-                <div class="trabalheConosco links"><div class="iconTrabalho" ></div><p>Trabalhe Conosco</p></div>
-                <div class="relatorioJvPrado links"><div class="iconRelatorio" ></div><p>Relatórios de Transparencia Salarial Prado</p></div>
-                <div class="relatorioLclItabata links"><div class="iconRelatorio" ></div><p>Relatórios de Transparencia Salarial Itabatã</p></div>
-                <div class="relatorioJvPdm links"><div class="iconRelatorio"></div><p>Relatórios de Transparencia Salarial Posto da Mata</p></div>
-            </div>
         </div>
+        <script>
+            const btn = document.querySelector('#btnForm');
+            const politic = document.querySelector('.formulario .formContent form #politicaPrivac a');
+            const frame = document.querySelector('.framePolitica');
+            const display = window.getComputedStyle(frame, null).display;
+            const fechar = document.querySelector(".feixar");
+
+            politic.addEventListener('click', () => {
+                display == "none" ? frame.style.display = "block" : () => {} 
+                fechar.addEventListener('click', () => { frame.style.display = "none" })
+            })
+
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.location.href = "https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr";
+                console.log("clicou");
+            })
+
+
+        </script>
     </body>
 </html>

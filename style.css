@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html,body{
+    overflow-x: hidden;
+}
 
 .image{
     width: 25%;
@@ -176,15 +179,16 @@
 .formulario .framePolitica{
     background-color: white;
     box-shadow:0px 0.5vw 2vw black ;
-    width: 40vw;
-    height: 37vw;
+    width: 70vw;
+    height: 95vw;
     position: fixed;
-    left: 30vw;
-    top: 1.5vw;
+    left: 15vw;
+    top: 20vw;
     padding: 2vw;
     overflow-x:hidden;
     overflow-y: scroll;
     display: none;
+    font-size: 3.5vw;
 }
 .formulario .framePolitica{
     scrollbar-color:#ffb400 rgb(224, 224, 224);
@@ -194,7 +198,7 @@
 }
 .formulario .framePolitica h1{
     margin: 1vw 0;
-    font-size: 2vw;
+    font-size: 3vw;
 }
 .formulario .framePolitica p{
     margin: 1vw 0;
@@ -202,20 +206,232 @@
 .formulario .framePolitica ul li{
     list-style-type:square;
 }
-.LinksExternals{
+.formulario .feixar{
+    position: absolute;
+    left: 65vw;
+    top: -2vw;
+    font-size: 10vw;
+    color: red;
+}
+footer{
+    background-color: #bc0008;
+    width: 100vw;
+    height: 12vw;
     display: flex;
-    justify-content: center;
+    position: absolute;
+    bottom: 0;
 }
-.LinksExternals div.links{
-    background-color: #ffb400;
-    width: 13vw;
-    height: 3vw;
-    margin: 0.5vw;float: right;
-
+footer div{
+    width: 40vw;
 }
-.LinksExternals div.links p{
-    width: 10vw;
-    height: 3vw;
-    font-size: 0.8vw;
+footer .links{
+    display: flex;
+    width: 30vw;
     float: right;
+    margin-left: 29vw;
 }
+footer .links ul{
+    margin: 1vw 2vw;
+    
+}
+footer .links li{
+    margin: 0.3vw 0;
+    list-style: none;
+    color: white;
+    font-weight: 100;
+}
+footer .links ul li:first-child{
+    font-weight: 900;
+}
+footer .logo{
+    background-image: url("./img/logoHorizontalBranca.png");
+    background-size: 70%;
+    margin: 2vw 0 0 4vw;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 400px) {
+
+    .image{
+        width: 45%;
+        margin: 5% auto;
+    }
+    .image img{
+        width: 100%;
+    }
+/*calma*/    
+    .formulario{
+        width: 100%;
+        margin-top: 5vw;
+        height: 50vw;
+    
+    }
+    .formulario .letreiro{
+        font-size: 2.5vw;
+        text-align: center;
+        color: #dd3e3d;
+        position: relative;
+        line-height:0.9;
+        top: -24vw;
+    }
+    .formulario .formContent form input,.formulario .formContent form select,.formulario .formContent form button{
+    
+        display:block;
+        width: 55vw;
+        padding: 4vw;
+        margin: 0.6vw auto;
+        font-size: 4.3vw;
+        background-color:#ffb400;
+        color: white;
+        font-weight: 800;
+        border: none;
+       outline-color: transparent;
+    }
+    .formulario .formContent form input:valid,.formulario .formContent form select:valid,.formulario .formContent form button:valid{
+        outline-color:green;
+    }
+    
+    .formulario .formContent form input::placeholder{
+        color: white;
+    }
+    .formulario .formContent form input[type="date"],.formulario .formContent form select{
+        width:29.7vw;
+        display: inline-block;
+    }
+    .formulario .formContent form input[type="date"]{
+        padding: 4.05vw 1.5vw;
+        font-size: 5vw;
+        position:relative;
+    }
+    .formulario .formContent form button{
+        width: 63vw;
+        padding: 3.6vw;
+        color: white;
+        background-color: green;
+    }
+    .formulario .formContent form #politicaPrivac{
+        color: black;
+        width: 65vw;
+        font-size: 2.2vw;
+        margin: 1vw auto;
+    } 
+    .formulario .formContent form #politicaPrivac a{
+        color: blue;
+        text-decoration:underline;
+        cursor: pointer;        
+    }
+    footer{
+        font-size: 1.2vw;
+    }
+    footer .logo{
+        width: 40vw;
+    }
+    .slide{
+        width: 100%;
+        margin: 7% auto;
+        margin-bottom: 0;
+    }
+    .retanguleBackground {
+        width: 100%;
+        height: 24vw;
+        background-color: #bc0008;
+    }
+    .slide .slideImages ul{
+        display: flex;
+        margin: 0 auto;
+        position: relative;
+        top: -25vw;
+        justify-content: center;
+        
+        
+    }
+    .slide .slideImages ul li{
+        width: 17vw;
+        height:26vw;
+        margin: 0 0.3%;
+        list-style: none;
+        background-color: black;
+        text-align: center;
+        align-items: center;
+        color:transparent;
+        transition: 1s;   
+        background-position: center;
+        background-size: 280% ;
+        background-repeat: no-repeat;
+    
+    }
+    .slide .slideImages ul li div{
+        width: 17vw;
+        height: 26vw;
+        background-color: transparent;
+        transition: 1s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .slide .slideImages ul li div p{
+        color: transparent;
+        font-size: 2.5vw;
+        transition: 1s;
+    }
+    .slide .slideImages ul li#PostoDaMata{
+        background-image: url("./img/img1.jpg");
+        background-position: 55% 100%;
+    }
+    .slide .slideImages ul li#PostoDaMata:hover{
+        background-size:300%
+    }
+    .slide .slideImages ul li#Itabata{
+        background-image: url("./img/img4.jpg");
+        background-position: 20% 30%;
+        background-size: 280%;
+    }
+    .slide .slideImages ul li#Itabata:hover{
+        background-size: 310%;
+        background-position: 20% 50%;
+    }
+    .slide .slideImages ul li#Mucuri{
+        background-image: url("./img/img3.jpg");
+        background-size: 270%;
+        background-position: 60% 40%;
+    }.slide .slideImages ul li#Mucuri:hover{
+        background-size: 260%;
+        background-position: 55% 100%;
+    }
+    .slide .slideImages ul li#Prado{
+        background-image: url("./img/img2.jpg");
+        background-size: 220%;
+        background-position: 80% 70%;
+    }
+    
+    .slide .slideImages ul li#Prado:hover{
+        background-size: 260%;
+        background-position: 80% 100%;
+    }
+    .slide .slideImages ul li#Itamaraju{
+        background-image: url("./img/img6.jpg");
+    }
+    .slide .slideImages ul li#Itamaraju:hover{
+        background-size: 300%;
+    }
+    
+    .slide .slideImages ul li:hover{
+        transition: 1s;
+        width: 24vw;
+        height: 33vw;
+        font-size: 3vw;
+        color: #ffb400;
+        margin-top: -3vw;
+        background-size: 170%;
+    }.slide .slideImages ul li:hover > div{
+        transition:1s;
+        height:33vw;
+        width: 24vw;
+        background-color:rgba(000,000,000,0.5);
+        color: #ffb400;
+        font-size: 3vw;
+    }.slide .slideImages ul li:hover > div p{
+        color: white;
+        font-size: 3vw;
+        transition: 1s;
+    }
+  }
