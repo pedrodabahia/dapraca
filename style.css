@@ -5,6 +5,7 @@
 html,body{
     overflow-x: hidden;
 }
+body{background-color: green;}
 
 .image{
     width: 25%;
@@ -204,14 +205,14 @@ html,body{
     margin: 1vw 0;
 }
 .formulario .framePolitica ul li{
-    list-style-type:square;
+    list-style-type:none;
 }
 .formulario .feixar{
     position: absolute;
     left: 65vw;
     top: -2vw;
     font-size: 10vw;
-    color: red;
+    color: black;
 }
 footer{
     background-color: #bc0008;
@@ -250,7 +251,8 @@ footer .logo{
     background-repeat: no-repeat;
 }
 @media screen and (max-width: 400px) {
-
+    
+    body{ background-color: black;}
     .image{
         width: 45%;
         margin: 5% auto;
