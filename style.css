@@ -4,7 +4,7 @@
 }
 html,body{
     overflow-x: hidden;
-    height: content;
+    min-height: 100vh;
 }
 
 .image{
@@ -254,7 +254,7 @@ footer .logo{
     margin: 2vw 0 0 4vw;
     background-repeat: no-repeat;
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 500px) {
     html,body{
             background-color: green;
     }
@@ -270,7 +270,7 @@ footer .logo{
     .formulario{
         width: 100%;
         margin-top: 5vw;
-        height: 50vw;
+        height: 70vw;
     
     }
     .formulario .letreiro{
@@ -457,9 +457,5 @@ footer .logo{
     body{
         background-color: #bc0008;
     }
-    footer{
-        position: absolute;
-        bottom: 0;
-    }
-    
+
   }
