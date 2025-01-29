@@ -128,6 +128,7 @@
                         </p>
                 </div>
             </div>
+            <div id="roteador"></div>
             <footer>
                 <div class="logo"></div>
                 <div class="links">
@@ -160,6 +161,9 @@
                 display == "none" ? frame.style.display = "block" : () => {} 
                 fechar.addEventListener('click', () => { frame.style.display = "none" })
             })
+
+            const rot = document.querySelector("#roteador");
+            rot.innerText = window.screen.width
 
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
