@@ -143,7 +143,7 @@ html,body{
     margin: 1vw auto;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    
 }
 .formulario .formContent{
     margin-top: 8vw;
@@ -295,7 +295,7 @@ footer .logo{
         display:block;
         width: 67vw;
         padding: 4vw;
-        margin: 0.6vw auto;
+        margin: 0 auto;
         font-size: 3vw;
         background-color:#ffb400;
         color: white;
@@ -324,6 +324,7 @@ footer .logo{
     .formulario .formContent form input#data{
 
         position:relative;
+        top: -0.02vw;
         color:white;
     }
     .formulario .formContent form button{
@@ -344,21 +345,45 @@ footer .logo{
         cursor: pointer;        
     }
     footer{
-        height: 15vw;
+        height: 20vw;
         font-size: 1.1vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
     }
     footer .logo{
-        width: 50vw;
+        width: 40vw;
+        height: 10vw;
+        display: block;
         background-position: center;
         margin: 0 auto;
     }
     footer .links{
+        display: block;
+        font-size: 1.27vw;
+        width: 60vw;
+        height: 8vw;
+        color: white;
+        margin: 0vw;
+        margin-bottom: -2vw;
+        text-align: center;
+    }
+    footer .links ul{
         display: none;
+    }
+    footer .links ul:last-child{
+        display: block;
+    }
+    footer .links ul a{
+        color: #ffb400;
+        text-decoration: none;
+        cursor: pointer;
     }
     .slide{
         width: 100%;
-        margin: 7% auto;
+        margin: 11% auto 7% auto;
         margin-bottom: 0;
     }
     .retanguleBackground {
