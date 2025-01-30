@@ -25,7 +25,7 @@
 
             <div class="formulario">
                 <div class="letreiro">
-                    <h1>Informe os seus dados para entrar <br>em nosso grupo de ofertas</h1>
+                    <h1 id="ll">Informe os seus dados para entrar <br>em nosso grupo de ofertas</h1>
                     <div class="formContent">
                         <form>
                             <input name="nameInput" type="text" placeholder="Nome" />
@@ -162,8 +162,7 @@
                 fechar.addEventListener('click', () => { frame.style.display = "none" })
             })
 
-            const rot = document.querySelector("#roteador");
-            rot.innerText = window.screen.width
+
 
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -189,6 +188,39 @@
                 }
             })
 
+            const elementos = [];
+            elementos [0] = document.querySelector("#PostoDaMata");
+            elementos [1] = document.querySelector("#Itabata");
+            elementos [2] = document.querySelector("#Mucuri");
+            elementos [3] = document.querySelector("#Prado");
+            elementos [4] = document.querySelector("#Itamaraju");
+            const contentSlide = document.querySelector(".slideImages ul");
+            const bodyElement = document.querySelector("body");
+            console.log(bodyElement.offsetWidth)
+            let i = 0;
+            elementos[i].style.width = "26vw";
+            elementos[i].style.height = "31vw";
+            elementos[i].style.marginTop = "-2vw";
+
+            const  timing = setInterval(() => {
+ 
+            elementos[i].style.width = "14vw";
+            elementos[i].style.height = "23vw";
+            elementos[i].style.marginTop = "0vw";    
+            i++
+            if( i > 4){
+                i = 0
+            } 
+            
+            elementos[i].style.width = "26vw";
+            elementos[i].style.height = "31vw";
+            elementos[i].style.marginTop = "-5vw";
+             
+             
+
+            },3000);
+
+                
 
         </script>
     </body>
