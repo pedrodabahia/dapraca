@@ -324,7 +324,6 @@ footer .logo{
     .formulario .formContent form input#data{
 
         position:relative;
-        top: 1vw;
         color:white;
     }
     .formulario .formContent form button{
@@ -494,5 +493,3 @@ footer .logo{
         transition: 1s;
     }
   }
-
-
