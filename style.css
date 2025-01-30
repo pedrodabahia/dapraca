@@ -137,6 +137,14 @@ html,body{
     line-height:0.9;
     top: -14vw;
 }
+.formulario .linha2Form{
+    display: flex;
+    width: 28vw;
+    margin: 1vw auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
 .formulario .formContent{
     margin-top: 8vw;
     color: #dd3e3d;
@@ -163,7 +171,7 @@ html,body{
 }
 .formulario .formContent form input[type="date"],.formulario .formContent form select{
     width:12.3vw;
-    display: inline-block;
+    
 }
 .formulario .formContent form input[type="date"]{
     padding: 1.36vw;
@@ -301,12 +309,18 @@ footer .logo{
     .formulario .formContent form input::placeholder{
         color: white;
     }
+    .formulario .linha2Form{
+        width: 63vw;
+    }
     .formulario .formContent form input[type="date"],.formulario .formContent form select{
-        width:29.7vw;
-        display: inline-block;
+        width:29vw;
+        margin: 0 auto ;
+        padding: 0vw 1.5vw;
+        height:15vw;
+        display: block;
     }
     .formulario .formContent form input[type="date"]{
-        padding: 4.77vw 1.5vw;
+
         font-size: 4vw;
         position:relative;
         top:-0.3vw;
