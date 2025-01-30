@@ -315,7 +315,7 @@ footer .logo{
     }
     .formulario .formContent form input#data,.formulario .formContent form select{
         width:36vw;
-        margin: 0 auto ;
+        margin: 0 0.1vw ;
         padding: 0vw 1.5vw;
         height:15vw;
         font-size: 3vw;
@@ -324,7 +324,6 @@ footer .logo{
     .formulario .formContent form input#data{
 
         position:relative;
-        top:-0.3vw;
         color:white;
     }
     .formulario .formContent form button{
