@@ -290,6 +290,9 @@ footer .logo{
         line-height:0.9;
         top: -24vw;
     }
+    .formulario .framePolitica{
+        top: -60vw;
+    }
     .formulario .formContent form input,.formulario .formContent form select,.formulario .formContent form button{
     
         display:block;
