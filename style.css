@@ -169,11 +169,11 @@ html,body{
 .formulario .formContent form input::placeholder{
     color: white;
 }
-.formulario .formContent form input[type="date"],.formulario .formContent form select{
+.formulario .formContent form input#data,.formulario .formContent form select{
     width:12.3vw;
     
 }
-.formulario .formContent form input[type="date"]{
+.formulario .formContent form input#data{
     padding: 1.36vw;
     font-size: 1.5vw;
     position:relative;
@@ -312,14 +312,14 @@ footer .logo{
     .formulario .linha2Form{
         width: 63vw;
     }
-    .formulario .formContent form input[type="date"],.formulario .formContent form select{
+    .formulario .formContent form input#data,.formulario .formContent form select{
         width:29vw;
         margin: 0 auto ;
         padding: 0vw 1.5vw;
         height:15vw;
         display: block;
     }
-    .formulario .formContent form input[type="date"]{
+    .formulario .formContent form input#data{
 
         font-size: 4vw;
         position:relative;
