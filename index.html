@@ -232,12 +232,12 @@
             
                 
 
-            if(largura <= 360 || altura > 1100){
+            if(largura < altura){
 
             for(let s = 0; s <= 4; s++ ){
             elementos[s].style.width = "14vw";
             elementos[s].style.height = "23vw";
-            elementos[s].style.marginTop = "0vw";
+            elementos[s].style.marginTop = "-1.5vw";
             opacidade[s].style.width = "14vw";
             opacidade[s].style.height = "23vw";
             opacidade[s].style.marginTop = "0vw";
@@ -252,9 +252,9 @@
 
             timing = setInterval(() => {
  
-            elementos[i].style.width = "14vw";
+            elementos[i].style.width = "17vw";
             elementos[i].style.height = "23vw";
-            elementos[i].style.marginTop = "0vw";    
+            elementos[i].style.marginTop = "-1vw";    
             opacidade[i].style.width = "14vw";
             opacidade[i].style.height = "23vw";
             opacidade[i].style.marginTop = "0vw";    
