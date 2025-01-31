@@ -495,3 +495,216 @@ footer .logo{
         transition: 1s;
     }
   }
+@media screen and (max-height: 1100px) {
+
+    .image{
+        width: 45%;
+        margin: 5% auto;
+    }
+    .image img{
+        width: 100%;
+    }
+/*calma*/    
+    .formulario{
+        width: 100%;
+        position:absolute;
+        top: 87vw;
+        height: 70vw;
+    
+    }
+    .formulario .letreiro{
+        font-size: 2.5vw;
+        position: relative;
+        line-height:0.9;
+        top: -24vw;
+    }
+    .formulario .framePolitica{
+        top: -60vw;
+    }
+    .formulario .formContent form input,.formulario .formContent form select,.formulario .formContent form button{
+    
+        display:block;
+        width: 67vw;
+        padding: 4vw;
+        margin: 0 auto;
+        font-size: 3vw;
+        background-color:#ffb400;
+        color: white;
+        font-weight: 800;
+        border: none;
+       outline-color: transparent;
+    }
+    .formulario .formContent form input:valid,.formulario .formContent form select:valid,.formulario .formContent form button:valid{
+        outline-color:green;
+    }
+    
+    .formulario .formContent form input::placeholder{
+        color: white;
+    }
+    .formulario .linha2Form{
+        width: 77vw;
+    }
+    .formulario .formContent form input#data,.formulario .formContent form select{
+        width:36vw;
+        margin: 0 0.1vw ;
+        padding: 0vw 1.5vw;
+        height:15vw;
+        font-size: 3vw;
+        display: block;
+    }
+    .formulario .formContent form input#data{
+
+        position:relative;
+        color:white;
+    }
+    .formulario .formContent form button{
+        width: 75vw;
+        padding: 3.6vw;
+        color: white;
+        background-color: green;
+    }
+    .formulario .formContent form #politicaPrivac{
+        color: black;
+        width: 65vw;
+        font-size: 2.2vw;
+        margin: 1vw auto;
+    } 
+    .formulario .formContent form #politicaPrivac a{
+        color: blue;
+        text-decoration:underline;
+        cursor: pointer;        
+    }
+    footer{
+        height: 20vw;
+        font-size: 1.1vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    footer .logo{
+        width: 40vw;
+        height: 10vw;
+        display: block;
+        background-position: center;
+        margin: 0 auto;
+    }
+    footer .links{
+        display: block;
+        font-size: 1.27vw;
+        width: 60vw;
+        height: 8vw;
+        color: white;
+        margin: 0vw;
+        margin-bottom: -2vw;
+        text-align: center;
+    }
+    footer .links ul{
+        display: none;
+    }
+    footer .links ul:last-child{
+        display: block;
+    }
+    footer .links ul a{
+        color: #ffb400;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .slide{
+        width: 100%;
+        margin: 11% auto 7% auto;
+        margin-bottom: 0;
+    }
+    .retanguleBackground {
+        width: 100%;
+        height: 17vw;
+        background-color: #bc0008;
+    }
+    .slide .slideImages ul{
+        display: flex;
+        margin: 0 auto;
+        position: relative;
+        top: -20vw;
+        justify-content: center;
+        
+        
+    }
+    .slide .slideImages ul li{
+        width: 14vw;
+        height:23vw;
+        margin: 0 0.3%;
+        list-style: none;
+        background-color: black;
+        text-align: center;
+        align-items: center;
+        color:transparent;
+        transition: 1s;   
+        background-position: center;
+        background-size: 280% ;
+        background-repeat: no-repeat;
+    
+    }
+    .slide .slideImages ul li div{
+        width: 17vw;
+        height: 26vw;
+        background-color: transparent;
+        transition: 1s;
+        display:none;
+        align-items: center;
+        justify-content: center;
+    }
+    .slide .slideImages ul li div p{
+        color: transparent;
+        font-size: 2.5vw;
+        transition: 1s;
+    }
+    .slide .slideImages ul li#PostoDaMata{
+        background-image: url("./img/img1.jpg");
+        background-position: 55% 100%;
+        background-size: 310%;
+    }
+    .slide .slideImages ul li#Itabata{
+        background-image: url("./img/img4.jpg");
+        background-position: 20% 30%;
+        background-size: 300%;
+    }
+    .slide .slideImages ul li#Mucuri{
+        background-image: url("./img/img3.jpg");
+        background-size: 300%;
+        background-position: 60% 40%;
+    }
+    .slide .slideImages ul li#Prado{
+        background-image: url("./img/img2.jpg");
+        background-size: 250%;
+        background-position: 80% 70%;
+    }
+    
+    .slide .slideImages ul li#Itamaraju{
+        background-image: url("./img/img6.jpg");
+        background-size: 330%;
+    }
+    
+    .slide .slideImages ul li:hover{
+        transition: 1s;
+        width: 24vw;
+        height: 33vw;
+        font-size: 3vw;
+        color: #ffb400;
+        margin-top: -3vw;
+        background-size: 170%;
+    }.slide .slideImages ul li:hover > div{
+        transition:1s;
+        height:33vw;
+        width: 24vw;
+        background-color:rgba(000,000,000,0.5);
+        color: #ffb400;
+        font-size: 3vw;
+        display: none;
+    }.slide .slideImages ul li:hover > div p{
+        color: white;
+        font-size: 3vw;
+        transition: 1s;
+    }
+  }
+
