@@ -709,7 +709,7 @@ footer .logo{
   }
 @media screen and (min-height:600px) and (max-width:590px) {
 
-    .image{
+        .image{
         width: 45%;
         margin: 5% auto;
     }
@@ -830,22 +830,21 @@ footer .logo{
     }
     .retanguleBackground {
         width: 100%;
-        height: 20vw;
+        height: 17vw;
         background-color: #bc0008;
     }
     .slide .slideImages ul{
         display: flex;
         margin: 0 auto;
         position: relative;
-        top: -23vw;
-        left: 0;
+        top: -20vw;
         justify-content: center;
         
         
     }
     .slide .slideImages ul li{
-        width: 17vw;
-        height:26vw;
+        width: 14vw;
+        height:23vw;
         margin: 0 0.3%;
         list-style: none;
         background-color: black;
@@ -919,4 +918,5 @@ footer .logo{
         font-size: 3vw;
         transition: 1s;
     }
+
   }
