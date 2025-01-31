@@ -219,6 +219,9 @@
             opacidade [3] = document.querySelector("#opacPrad");
             opacidade [4] = document.querySelector("#opacIta");
 
+            var larguraPrimord = window.innerWidth;
+            var alturaPrimord = window.innerHeight;
+          
             function sslider(){    
             var largura = window.innerWidth;
             var altura = window.innerHeight;
@@ -285,6 +288,14 @@
                 }
             }
         }
+
+
+
+            if(larguraPrimord < alturaPrimord){ sslider()}
+
+
+
+            
             window.addEventListener("resize", sslider());
 
         </script>
