@@ -494,7 +494,7 @@ footer .logo{
         font-size: 3vw;
         transition: 1s;
     }
-  }@media screen and (max-height: 1100px) {
+  }@media screen and (min-height:1000px) {
 
     .image{
         width: 45%;
