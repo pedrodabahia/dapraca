@@ -179,8 +179,7 @@
                 display == "none" ? frame.style.display = "block" : () => {} 
                 fechar.addEventListener('click', () => { frame.style.display = "none" })
             })
-
-            document.querySelector("#roteador").innerText = alturaPrimord;
+            
 
 
             btn.addEventListener('click', (e) => {
@@ -223,7 +222,7 @@
 
             var larguraPrimord = window.innerWidth;
             var alturaPrimord = window.innerHeight;
-          
+          document.querySelector("#roteador").innerText = alturaPrimord;
             function sslider(){    
             var largura = window.innerWidth;
             var altura = window.innerHeight;
