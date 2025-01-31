@@ -220,7 +220,8 @@
             opacidade [4] = document.querySelector("#opacIta");
 
             window.addEventListener("resize", () => {
-                var largura = window.innerWidth; 
+                var largura = window.innerWidth;
+                var altura = window.innerHeight;
             const contentSlide = document.querySelector(".slidecontent");
             contentSlide.style.top = "1vw";
             contentSlide.style.left = "15vw";
@@ -231,7 +232,7 @@
             
                 
 
-            if(largura <= 360){
+            if(largura <= 360 || altura > 1100){
 
             for(let s = 0; s <= 4; s++ ){
             elementos[s].style.width = "14vw";
