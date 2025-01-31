@@ -15,6 +15,7 @@
     </head>
     <body>
         <div class="content">
+           
             <div class="image"><img src="./img/logoVertical.png" /></div>
             <div class="slide">
                 <div class="retanguleBackground"></div>
@@ -27,7 +28,7 @@
                         <li id="Itamaraju"><div id="opacIta"><p>Itamaraju</p></div></li>
                     </ul>
                 </div>
-            </div>
+            </div> <h1 id="roteador"></h1>
 
             <div class="formulario">
                 <div class="letreiro">
@@ -221,6 +222,7 @@
 
             var larguraPrimord = window.innerWidth;
             var alturaPrimord = window.innerHeight;
+            document.querySelector("#roteador").innerText = alturaPrimord;
           
             function sslider(){    
             var largura = window.innerWidth;
