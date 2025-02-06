@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "marketing-da-pra",
+  "private_key_id": "5d5f43f1a56af8ba02328691fb9e4e35effedd40",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC/x9qxXK5Eabf5\nUlw+egaoz07UtMms8XUu1w0cwkWC9c/NqxMeRkrUJT0zHXFiKV/603XL6O2HNZbF\nmvRHeNFSU9MDErE9yNeJrlzOpIHWBwmBVnrEfLzGdVJ6WbeM/oyxGMVZ/MoD9RSw\n9MCr/EZlu4iYOuYJlqPZbLQ67gAmRPysUDKYJJLA3WKa94tAk6ezp0kqtLgYtmBk\n81uGLK25QS7pExe39vBJ6vmBfvhTLWROYUtXEYxSX5kZkT//ZWfVBmYDSg54DK13\nnRu/o5SGkf0Skd4+3/o58RXSpmiBx0HxlO0aXOR12lTEq0lkFqnE9bfy/U9wmCO6\nKJfuvFflAgMBAAECggEACO+OrowlBP0iCoFpEat/GWHv3aYbfC3pFJcGPm/2pNlO\nAz4Q+eyIbF6jmhVF8z03SbPihLZAvwXjB0SYqcMzF9iIlGXMSkFolnOj37aMqtLJ\n5Prsnj7IFoREXdJFyFGFjB452nuWcIf8jm7fPVmQqXrunlYYqQ0oFgsdGLPTpy2j\nqoEt7Q/k+mlWtB0yhV8Blub3YHcjg9D8Lo4ZrsI0T7iUxttV/jJiZDI99BIB9iC0\n4ue3MLx4sM962iNsxGaRtMi9hIB2a+96Mm6jv1zj9sQCmae0jp5VoijSn7iC7n9B\nx15GdLo0lMRFgBXBIwSiXteRlSJjfz0L91CoqGgsDwKBgQD8PSFZz2+G5/jhuoGB\nWcX8etID+CgkDnmc3yW0UXlDo7kaVJ8V3bmGfXsy8bzUquZnUgfHcPiX6M1dWyrp\nGO8u7txi0H9OZFwW6E2E6z3+Qo55pixqutG2v9lRxfttAiyou1fOa250839IK7Vr\n8OMDtNY8lqilQologvMGrMvlawKBgQDCo/AF2ANLMRC2UP17UMTN4t6SPQb4T4SP\nNff17foKJnwODPTuLSr2TxK/eq+3VxsqHyH5ygD4VDm8g5NTLyfs2+FSG+IkXvav\nvvKXcuwWSswXR+SgF/pdPPUXFtevtySSnGpSXhPVMu32QOS8GRfujyEI1FfafHtP\nA8GvqmS77wKBgQC/Y6btnV7zTwpiRIDFZBe89nhqOJ5ElZMjO5JBWtyXPSBTYUgA\ncGe4K3gSdKgh+bavSOfMJeUKZsOEhYtuqNO7mdQxSiB+m9ngK82+ADzesyOmHDdx\nmGVNtA4yZPXchZzbPqNmZc++/49hdIDI8VNfWZSBDpPSKUVXvpymQPDJFwKBgFyQ\nWDJ/Qzm8EMWTiKjfhWigbta/HRRzxIfS06RqU1IGcVLBSK4IXvkaK8FSGESpsSp7\n+c1wCrwOWhLTw/l4YJVdEC/bQNWpL8nuljH+HlaPpbWgpBKatJ8owSoE2/gdsc/j\ngRDA2s+2U8Kbo+vsRxxVhxFK4qjuMDoogDEJaLSTAoGADr3Z6+vjt6JNrjiViqdn\nSXenCztnMSMKGLi5hCJ910yVjSsqsk4EGbW3pm68V0PQ+t9BTQ+vmI9ZPpS4qggt\n+GtLRtBtn913tMhLucVQbAdN+cBX0EOd6gfUPsqsdsKAMZMBPdYEia/YBUEo80G2\n3nZbIKOL+oL1WDgQLbf/lVY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "marketingdapraca@marketing-da-pra.iam.gserviceaccount.com",
+  "client_id": "117938322178966440468",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/marketingdapraca%40marketing-da-pra.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
