@@ -58,8 +58,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
   event.preventDefault();
 
   const name = document.getElementById('name').value;
-  const idade = document.getElementById('idade').value;
-  const cidade = document.querySelector('select').value;
+
 
   // Verifica se o usuário está autenticado
   if (!window.g_access_token) {
