@@ -77,3 +77,4 @@ document.getElementById('form').addEventListener('submit', function(event) {
 
 // Carrega a API do Google quando a página for carregada
 window.onload = loadClient;
+
