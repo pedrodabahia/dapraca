@@ -68,8 +68,8 @@ document.getElementById('form').addEventListener('submit', function(event) {
   event.preventDefault();
 
   const name = document.getElementById('name').value;
-  const idade = document.getElementById('idade').value;
-  const cidade = document.querySelector('select').value;
+  const idade = document.getElementById('data').value; // Corrigido para capturar o valor do campo de data
+  const cidade = document.getElementById('cidade').value;
 
   // Chama a função para enviar os dados após a autenticação
   enviarDados(name, idade, cidade);  
