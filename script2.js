@@ -1,6 +1,6 @@
 const sheetId = '1lZkn7a8BJ7O28_cNAbzl8BPlu23E-NrxTbTkkCeqljg'; // Substitua com a ID da sua planilha
 const apiKey = 'AIzaSyCGRsF9JdYLy0q33yI1CSHamlhhqtYhi54'; // Substitua com sua chave da API do Google Cloud
-const sheetRange = 'A1'; // O local onde você quer começar a escrever na planilha (ex: A1, A2, etc.)
+const sheetRange = 'Sheet1!A1'; // O local onde você quer começar a escrever na planilha (ex: A1, A2, etc.)
 
 // Função de inicialização da API do Google
 function initApi() {
