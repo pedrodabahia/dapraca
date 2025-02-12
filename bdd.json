@@ -1,0 +1,28 @@
+{
+    "clientes": [
+        {
+            "id": 0,
+            "nome": "Pedro Matos",
+            "cidade": "Itabat\u00e3",
+            "idade": "2005-08-11"
+        },
+        {
+            "id": 1,
+            "nome": "Pedro Matos",
+            "cidade": "Mucuri",
+            "idade": "2005-08-11"
+        },
+        {
+            "id": 2,
+            "nome": "Pedro Matos",
+            "cidade": "Posto da Mata",
+            "idade": "2005-08-11"
+        },
+        {
+            "id": 3,
+            "nome": "Donatelo",
+            "cidade": "Mucuri",
+            "idade": "25222-05-02"
+        }
+    ]
+}
