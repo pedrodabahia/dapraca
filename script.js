@@ -14,7 +14,7 @@ politic.addEventListener('click', () => {
 
 btn.addEventListener('click', (e) => {
     e.preventDefault();
-    btn.disabled = true;
+    
 
     switch(cidade.selectedIndex){
         case 0:
