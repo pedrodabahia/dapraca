@@ -14,16 +14,7 @@ politic.addEventListener('click', () => {
 
 btn.addEventListener('click', (e) => {
     e.preventDefault();
-    const dados = new FormData(formulario)
-    console.log(dados)
-
-    fetch('./convert.php',{
-    method : 'POST',
-    body: dados
-    })
-
-
-
+    btn.disabled = true;
 
     switch(cidade.selectedIndex){
         case 0:
