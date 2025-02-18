@@ -13,7 +13,7 @@ politic.addEventListener('click', () => {
 
 
 btn.addEventListener('click', (e) => {
-    e.preventDefault();
+  //  e.preventDefault();
     
 
     switch(cidade.selectedIndex){
