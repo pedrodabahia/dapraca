@@ -10,13 +10,13 @@ function getParametroURL(parametro) {
     }
 
     // Captura o valor da cidade que foi enviado
-    const cidade = getParametroURL('cidade');
+    const cidades = localStorage.getItem('cidade')
     
     // Lógica para redirecionar para o WhatsApp baseado na cidade
     let urlWhatsapp = '';
-            console.log(cidade);
+            console.log(cidades);
 
-                switch(cidade) {
+                switch(cidades) {
           case "Posto da Mata":
             window.location.href = "https://chat.whatsapp.com/J7vSp3d4mwPBJaEmbStoPP";
             break;
