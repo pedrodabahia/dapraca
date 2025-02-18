@@ -16,31 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
     event.preventDefault();  // Impede o envio padrão do formulário
 
     const cidade = document.getElementById('cidade').value;  // Captura o valor da cidade
-    
-    // Lógica para redirecionar para o WhatsApp com base na cidade
-    let urlWhatsapp = '';
-    
-    switch (cidade) {
-      case '1':
-        urlWhatsapp = "https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr";  // Cidade 1
-        break;
-      case '2':
-        urlWhatsapp = "https://chat.whatsapp.com/J7vSp3d4mwPBJaEmbStoPP";  // Cidade 2
-        break;
-      case '3':
-        urlWhatsapp = "https://chat.whatsapp.com/Gnc21qUogOa5NYGzR033sM";  // Cidade 3
-        break;
-      default:
-        urlWhatsapp = "https://chat.whatsapp.com/defaultLink";  // Link default se nada for selecionado
-        break;
-    }
 
-    // Envia o formulário para o Netlify (simula o envio)
-    form.submit();
-    
-    // Após o envio, redireciona para o WhatsApp
-    window.location.href = urlWhatsapp;
-  });
+    localStorage('cidade',cidade);
 var timing;
 const elementos = [];
 const opacidade = [];
