@@ -6,16 +6,13 @@ const frame = document.querySelector('.framePolitica');
 const display = window.getComputedStyle(frame, null).display;
 const fechar = document.querySelector(".feixar");
 
-politic.addEventListener('click', () => {
-    display == "none" ? frame.style.display = "block" : () => {} 
-    fechar.addEventListener('click', () => { frame.style.display = "none" })
-})
 
 
-btn.addEventListener('click', (e) => {
-    e.preventDefault();
-    
 
+document.addEventListener('DOMContentLoaded', function () {
+  var form = document.querySelector('form[data-netlify="true"]');
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
     switch(cidade.selectedIndex){
         case 0:
         window.location.href = "https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr";
@@ -64,71 +61,70 @@ const contentSlide = document.querySelector(".slidecontent");
 contentSlide.style.top = "1vw";
 contentSlide.style.left = "15vw";
 
-
-    clearInterval(timing);
-
-
-    
+clearInterval(timing);
 
 if(largura < altura){
-
-for(let s = 0; s <= 4; s++ ){
-elementos[s].style.width = "14vw";
-elementos[s].style.height = "23vw";
-elementos[s].style.marginTop = "-1.5vw";
-opacidade[s].style.width = "14vw";
-opacidade[s].style.height = "23vw";
-opacidade[s].style.marginTop = "0vw";
-}
-contentSlide.style.top = "-20vw"
-contentSlide.style.left = "0"
-
-
-const bodyElement = document.querySelector("body");
-let i = 0;
-
-
-timing = setInterval(() => {
-
-elementos[i].style.width = "17vw";
-elementos[i].style.height = "23vw";
-elementos[i].style.marginTop = "-1vw";    
-opacidade[i].style.width = "14vw";
-opacidade[i].style.height = "23vw";
-opacidade[i].style.marginTop = "0vw";    
-
-i++
-if( i > 4){
-    i = 0
-} 
-
-elementos[i].style.width = "26vw";
-elementos[i].style.height = "31vw";
-elementos[i].style.marginTop = "-5vw";
-opacidade[i].style.width = "26vw";
-opacidade[i].style.height = "31vw";
-opacidade[i].style.marginTop = "-5vw";
- 
- 
-
-},3000);
+        for(let s = 0; s <= 4; s++ ){
+        elementos[s].style.width = "14vw";
+        elementos[s].style.height = "23vw";
+        elementos[s].style.marginTop = "-1.5vw";
+        opacidade[s].style.width = "14vw";
+        opacidade[s].style.height = "23vw";
+        opacidade[s].style.marginTop = "0vw";
+        }
+        contentSlide.style.top = "-20vw"
+        contentSlide.style.left = "0"
+    
+    
+        const bodyElement = document.querySelector("body");
+        let i = 0;
+    
+    
+    timing = setInterval(() => {
+        elementos[i].style.width = "17vw";
+        elementos[i].style.height = "23vw";
+        elementos[i].style.marginTop = "-1vw";    
+        opacidade[i].style.width = "14vw";
+        opacidade[i].style.height = "23vw";
+        opacidade[i].style.marginTop = "0vw";    
+        i++;
+    
+    if( i > 4){
+        i = 0
+    } 
+        elementos[i].style.width = "26vw";
+        elementos[i].style.height = "31vw";
+        elementos[i].style.marginTop = "-5vw";
+        opacidade[i].style.width = "26vw";
+        opacidade[i].style.height = "31vw";
+        opacidade[i].style.marginTop = "-5vw";
+    },3000);
+        
 }else{
     console.log(opacidade)
     for(let s = 0; s <= 4; s++ ){
-elementos[s].style.width = "14vw";
-elementos[s].style.height = "16vw";
-elementos[s].style.marginTop = "-2vw";
-opacidade[s].style.width = "14vw";
-opacidade[s].style.height = "16vw";
+        elementos[s].style.width = "14vw";
+        elementos[s].style.height = "16vw";
+        elementos[s].style.marginTop = "-2vw";
+        opacidade[s].style.width = "14vw";
+        opacidade[s].style.height = "16vw";
     }
 }
+
+    document.querySelector('.thank-you-message').style.display = 'none'; 
+
+    // Você pode adicionar sua lógica customizada aqui
+    alert("Formulário enviado com sucesso!");
+  });
+});
+
+politic.addEventListener('click', () => {
+    display == "none" ? frame.style.display = "block" : () => {} 
+    fechar.addEventListener('click', () => { frame.style.display = "none" })
+})
+
+btn.addEventListener('click', (e) => {
+    e.preventDefault();
 }
-
-
-
 if(larguraPrimord < alturaPrimord){ sslider()}
-
-
-
-
 window.addEventListener("resize", sslider());
