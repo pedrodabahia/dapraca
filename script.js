@@ -5,21 +5,15 @@ const politic = document.querySelector('#politicaPrivac a'); // Corrigido
 const frame = document.querySelector('.framePolitica');
 const fechar = document.querySelector(".feixar");
 
-document.addEventListener('DOMContentLoaded', function () {
-    var form = document.querySelector('form[data-netlify="true"]');
 
-    if (!form) {
-        console.error("Formulário não encontrado!");
-        return;
-    }
+    var form = document.querySelector('form[data-netlify="true"]');
 
     // Lida com o evento de submit
     form.addEventListener('submit', function (event) {
-        event.preventDefault(); // Impede o envio padrão do formulário
-
         const cidadeValor = document.getElementById('cidade')?.value || ''; // Captura o valor da cidade
 
         localStorage.setItem('cidade', cidadeValor);
+    });
 
         var timing;
         const elementos = [];
@@ -101,10 +95,10 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
 
-        document.querySelector('.thank-you-message')?.style.display = 'none';
+
 
         alert("Formulário enviado com sucesso!");
-    });
+   
 
     // Manipulação do clique na política de privacidade
     if (politic) {
@@ -127,11 +121,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Evento de clique no botão
-    if (btn) {
-        btn.addEventListener('click', (e) => {
-            e.preventDefault();
-        });
-    }
 
     // Iniciar slider ao carregar a página
     if (document.querySelector(".slidecontent")) {
@@ -140,4 +129,4 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         console.warn("Elementos do slider não encontrados!");
     }
-});
+
