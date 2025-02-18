@@ -12,7 +12,7 @@ const fechar = document.querySelector(".feixar");
 document.addEventListener('DOMContentLoaded', function () {
   var form = document.querySelector('form[data-netlify="true"]');
   
-  form.addEventListener('click', function (event) {
+  form.addEventListener('submit', function (event) {
     event.preventDefault(); // Prevenir o comportamento padrão do formulário (não envia por padrão)
 
     // Enviar os dados do formulário para o Netlify via fetch
