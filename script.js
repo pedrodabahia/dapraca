@@ -17,29 +17,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Enviar os dados do formulário para o Netlify via fetch
 
-          switch(cidade.selectedIndex) {
-          case 0:
-              form.action = 'https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr';
-            window.location.href = "https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr";
-            break;
-          case 1:
-              form.action = 'https://chat.whatsapp.com/J7vSp3d4mwPBJaEmbStoPP';
+                      switch(cidade) {
+          case "Posto da Mata":
             window.location.href = "https://chat.whatsapp.com/J7vSp3d4mwPBJaEmbStoPP";
             break;
-          case 2:
-              form.action = 'https://chat.whatsapp.com/Gnc21qUogOa5NYGzR033sM';
+          case "Itabatã":
             window.location.href = "https://chat.whatsapp.com/Gnc21qUogOa5NYGzR033sM";
             break;
-          case 3:
-              form.action = 'https://chat.whatsapp.com/JVkyD6mW1dXKNvUDAmjGDy';
+          case "Mucuri":
             window.location.href = "https://chat.whatsapp.com/JVkyD6mW1dXKNvUDAmjGDy";
             break;
-          case 4:
-              form.action = 'https://chat.whatsapp.com/KZOO4rSC85aIF465IRE8Pg';
+          case "Prado":
             window.location.href = "https://chat.whatsapp.com/KZOO4rSC85aIF465IRE8Pg";
             break;
-          case 5:
-              form.action = 'https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr';
+          case "Itamaraju":
             window.location.href = "https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr";
             break;
     
