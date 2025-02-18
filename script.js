@@ -12,8 +12,8 @@ politic.addEventListener('click', () => {
 })
 
 
-btn.addEventListener('click', (e) => {
-  //  e.preventDefault();
+btn.addEventListener('submit', (e) => {
+    e.preventDefault();
     
 
     switch(cidade.selectedIndex){
