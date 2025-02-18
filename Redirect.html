@@ -14,24 +14,22 @@ function getParametroURL(parametro) {
     
     // Lógica para redirecionar para o WhatsApp baseado na cidade
     let urlWhatsapp = '';
+            console.log(cidade);
 
-                    switch(cidade.selectedIndex) {
-          case 0:
-            window.location.href = "https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr";
-            break;
-          case 1:
+                switch(cidade) {
+          case "Posto da Mata":
             window.location.href = "https://chat.whatsapp.com/J7vSp3d4mwPBJaEmbStoPP";
             break;
-          case 2:
+          case "Itabatã":
             window.location.href = "https://chat.whatsapp.com/Gnc21qUogOa5NYGzR033sM";
             break;
-          case 3:
+          case "Mucuri":
             window.location.href = "https://chat.whatsapp.com/JVkyD6mW1dXKNvUDAmjGDy";
             break;
-          case 4:
+          case "Prado":
             window.location.href = "https://chat.whatsapp.com/KZOO4rSC85aIF465IRE8Pg";
             break;
-          case 5:
+          case "Itamaraju":
             window.location.href = "https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr";
             break;
         }
