@@ -12,20 +12,12 @@ const fechar = document.querySelector(".feixar");
 document.addEventListener('DOMContentLoaded', function () {
   var form = document.querySelector('form[data-netlify="true"]');
   
-  form.addEventListener('submit', function (event) {
+  form.addEventListener('click', function (event) {
     event.preventDefault(); // Prevenir o comportamento padrão do formulário (não envia por padrão)
 
     // Enviar os dados do formulário para o Netlify via fetch
-    var formData = new FormData(form);
-    
-    fetch(form.action, {
-      method: form.method,
-      body: formData,
-    })
-    .then(response => {
-      if (response.ok) {
-        // Redirecionar para o WhatsApp após o envio bem-sucedido
-        switch(cidade.selectedIndex) {
+
+          switch(cidade.selectedIndex) {
           case 0:
             window.location.href = "https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr";
             break;
@@ -44,6 +36,15 @@ document.addEventListener('DOMContentLoaded', function () {
           case 5:
             window.location.href = "https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr";
             break;
+    
+    var formData = new FormData(form);
+    fetch(form.action, {
+      method: form.method,
+      body: formData,
+    })
+    .then(response => {
+      if (response.ok) {
+        // Redirecionar para o WhatsApp após o envio bem-sucedido
         }
       } else {
         console.error('Falha no envio do formulário', response);
