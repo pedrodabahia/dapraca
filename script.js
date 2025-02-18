@@ -12,7 +12,18 @@ const fechar = document.querySelector(".feixar");
 document.addEventListener('DOMContentLoaded', function () {
   var form = document.querySelector('form[data-netlify="true"]');
   form.addEventListener('submit', function (event) {
+    
     event.preventDefault();
+    // Simula o envio do formulário (pode ser feito pelo Netlify)
+    fetch('/.netlify/functions/form-submit', {
+        method: 'POST',
+        body: new FormData(form),
+    }).then(response => {
+        if (response.ok) {
+            // Redireciona após um pequeno atraso para garantir que o envio foi feito
+            setTimeout(() => {
+                
+
     switch(cidade.selectedIndex){
         case 0:
         window.location.href = "https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr";
@@ -34,6 +45,16 @@ document.addEventListener('DOMContentLoaded', function () {
         break;                        
 
     }
+
+              
+                }
+            }, 1000);  // Atraso de 1 segundo antes do redirecionamento
+        } else {
+            alert("Erro ao enviar o formulário. Tente novamente.");
+        }
+    });
+});
+  
 })
 var timing;
 const elementos = [];
