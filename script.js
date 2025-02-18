@@ -12,7 +12,7 @@ politic.addEventListener('click', () => {
 })
 
 
-btn.addEventListener('submit', (e) => {
+btn.addEventListener('click', (e) => {
     e.preventDefault();
     
 
