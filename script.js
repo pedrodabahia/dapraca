@@ -19,21 +19,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
           switch(cidade.selectedIndex) {
           case 0:
+              form.action = 'https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr';
             window.location.href = "https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr";
             break;
           case 1:
+              form.action = 'https://chat.whatsapp.com/J7vSp3d4mwPBJaEmbStoPP';
             window.location.href = "https://chat.whatsapp.com/J7vSp3d4mwPBJaEmbStoPP";
             break;
           case 2:
+              form.action = 'https://chat.whatsapp.com/Gnc21qUogOa5NYGzR033sM';
             window.location.href = "https://chat.whatsapp.com/Gnc21qUogOa5NYGzR033sM";
             break;
           case 3:
+              form.action = 'https://chat.whatsapp.com/JVkyD6mW1dXKNvUDAmjGDy';
             window.location.href = "https://chat.whatsapp.com/JVkyD6mW1dXKNvUDAmjGDy";
             break;
           case 4:
+              form.action = 'https://chat.whatsapp.com/KZOO4rSC85aIF465IRE8Pg';
             window.location.href = "https://chat.whatsapp.com/KZOO4rSC85aIF465IRE8Pg";
             break;
           case 5:
+              form.action = 'https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr';
             window.location.href = "https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr";
             break;
     
