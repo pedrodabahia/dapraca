@@ -1,7 +1,7 @@
 const btn = document.querySelector('#btnForm');
 const cidade = document.querySelector('select');
 const formulario = document.querySelector('form');
-const politic = document.querySelector('#politicaPrivac a');
+const politic = document.querySelector('#politicaPrivac a'); // Corrigido
 const frame = document.querySelector('.framePolitica');
 const fechar = document.querySelector(".feixar");
 
@@ -109,16 +109,21 @@ document.addEventListener('DOMContentLoaded', function () {
     // Manipulação do clique na política de privacidade
     if (politic) {
         politic.addEventListener('click', () => {
-            if (window.getComputedStyle(frame).display === "none") {
+            if (frame && window.getComputedStyle(frame).display === "none") {
                 frame.style.display = "block";
             }
 
             if (fechar) {
-                fechar.addEventListener('click', () => {
-                    frame.style.display = "none";
-                });
+                fechar.removeEventListener('click', fecharFrame);
+                fechar.addEventListener('click', fecharFrame);
             }
         });
+    }
+
+    function fecharFrame() {
+        if (frame) {
+            frame.style.display = "none";
+        }
     }
 
     // Evento de clique no botão
@@ -129,8 +134,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Iniciar slider ao carregar a página
-    sslider();
-    
-    // Adiciona evento de resize para ajustar o slider
-    window.addEventListener("resize", sslider);
+    if (document.querySelector(".slidecontent")) {
+        sslider();
+        window.addEventListener("resize", sslider);
+    } else {
+        console.warn("Elementos do slider não encontrados!");
+    }
 });
