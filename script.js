@@ -11,50 +11,6 @@ const fechar = document.querySelector(".feixar");
 
 document.addEventListener('DOMContentLoaded', function () {
   var form = document.querySelector('form[data-netlify="true"]');
-  
-  form.addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevenir o comportamento padrão do formulário (não envia por padrão)
-
-    // Enviar os dados do formulário para o Netlify via fetch
-
-                      switch(cidade) {
-          case "Posto da Mata":
-            window.location.href = "https://chat.whatsapp.com/J7vSp3d4mwPBJaEmbStoPP";
-            break;
-          case "Itabatã":
-            window.location.href = "https://chat.whatsapp.com/Gnc21qUogOa5NYGzR033sM";
-            break;
-          case "Mucuri":
-            window.location.href = "https://chat.whatsapp.com/JVkyD6mW1dXKNvUDAmjGDy";
-            break;
-          case "Prado":
-            window.location.href = "https://chat.whatsapp.com/KZOO4rSC85aIF465IRE8Pg";
-            break;
-          case "Itamaraju":
-            window.location.href = "https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr";
-            break;
-    
-    var formData = new FormData(form);
-    fetch(form.action, {
-      method: form.method,
-      body: formData,
-    })
-    .then(response => {
-      if (response.ok) {
-        // Redirecionar para o WhatsApp após o envio bem-sucedido
-        }
-      } else {
-        console.error('Falha no envio do formulário', response);
-      }
-    })
-    .catch(error => {
-      console.error('Erro ao enviar o formulário', error);
-    });
-  });
-});
-
-  
-})
 var timing;
 const elementos = [];
 const opacidade = [];
