@@ -1,0 +1,40 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Você está sendo Redirecionado para o nosso grupo de ofertas, aguarde um pouquinho! </h1>
+        <script>
+
+function getParametroURL(parametro) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(parametro);
+    }
+
+    // Captura o valor da cidade que foi enviado
+    const cidade = getParametroURL('cidade');
+    
+    // Lógica para redirecionar para o WhatsApp baseado na cidade
+    let urlWhatsapp = '';
+
+                    switch(cidade.selectedIndex) {
+          case 0:
+            window.location.href = "https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr";
+            break;
+          case 1:
+            window.location.href = "https://chat.whatsapp.com/J7vSp3d4mwPBJaEmbStoPP";
+            break;
+          case 2:
+            window.location.href = "https://chat.whatsapp.com/Gnc21qUogOa5NYGzR033sM";
+            break;
+          case 3:
+            window.location.href = "https://chat.whatsapp.com/JVkyD6mW1dXKNvUDAmjGDy";
+            break;
+          case 4:
+            window.location.href = "https://chat.whatsapp.com/KZOO4rSC85aIF465IRE8Pg";
+            break;
+          case 5:
+            window.location.href = "https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr";
+            break;
+        }
+        </script>
+    </body>
+</html>
