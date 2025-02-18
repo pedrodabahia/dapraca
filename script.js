@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const cidade = document.getElementById('cidade').value;  // Captura o valor da cidade
 
-    localStorage('cidade',cidade);
+    localStorage.setItem('cidade',cidade);
 var timing;
 const elementos = [];
 const opacidade = [];
