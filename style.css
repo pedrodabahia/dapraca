@@ -180,6 +180,7 @@ background-size: 240%;
 .formulario .formContent form input#idade,.formulario .formContent form select{
     width:12.3vw;
     border-radius: none;
+    margin-top: -0.3vw;
     
 }
 .formulario .formContent form input#idade{

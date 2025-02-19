@@ -14,20 +14,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
         var nome = document.getElementById("nome")?.value || "Sem Nome";
         var idade = document.getElementById("idade")?.value || "Sem Idade";
+        var telefone = document.getElementById("telefone")?.value || "Sem Telefone";
 
-        if(cidadeValor != "nulo" && nome != "Sem Nome"  && idade != "Sem Idade"){
+        if(cidadeValor != "nulo" && nome != "Sem Nome"  && idade != "Sem Idade" && telefone != "Sem Telefone"){
 
         var data = {
             data: {
                 nome: nome,
                 idade: idade,
-                cidade: cidadeValor
+                cidade: cidadeValor,
+                telefone: telefone
             }
         };
 
         msg.style.top = "0vw";
         try {
-            let response = await fetch("https://script.google.com/macros/s/AKfycbwKJqK9W1OTL-7yA0QCnjHK0EI4-AO745BNTfR1o_y_PHnERB5VBnALtL24DgFOl9cF/exec", {
+            let response = await fetch("https://script.google.com/macros/s/AKfycbygeHW-hoqD53VLMDPklGF5IwCYVm9Ee0Mm6VPGpCBh1X6XUfGfCY58ksTDyGqhIMWO/exec", {
                 method: "POST",
                 mode: "no-cors",
                 headers: { "Content-Type": "application/json" },
