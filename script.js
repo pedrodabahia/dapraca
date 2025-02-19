@@ -13,6 +13,7 @@ const fechar = document.querySelector(".feixar");
         const cidadeValor = document.getElementById('cidade')?.value || ''; // Captura o valor da cidade
 
         localStorage.setItem('cidade', cidadeValor);
+        console.log(cidadeValor);
     });
 
         var timing;
