@@ -6,7 +6,7 @@ const frame = document.querySelector('.framePolitica');
 const fechar = document.querySelector(".feixar");
 
 
-    var form = document.querySelector('form[data-netlify="true"]');
+    var form = document.querySelector('form');
 
     // Lida com o evento de submit
     form.addEventListener('submit', function (event) {
