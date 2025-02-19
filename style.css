@@ -557,7 +557,7 @@ footer .logo{
   }@media screen and (min-height:780px) {
 
         #msg{
-        width: 40vw;
+        width: 65vw;
         left:29vw;
         font-size: 2vw;
     }
@@ -776,7 +776,7 @@ footer .logo{
 @media screen and (min-height:600px) and (max-width:590px) {
 
     .image{
-        width: 45%;
+        width: 65%;
         margin: 5% auto;
     }
     .image img{
