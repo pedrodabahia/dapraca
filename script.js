@@ -11,8 +11,13 @@ const fechar = document.querySelector(".feixar");
     // Lida com o evento de submit
     form.addEventListener('submit', function (event) {
         const cidadeValor = document.getElementById('cidade')?.value || ''; // Captura o valor da cidade
-
-        localStorage.setItem('cidade', cidadeValor);
+        if(cidadeValor == "Itabatã){ 
+        cidadeValor = "Itabata";
+        localStorage.setItem('cidade', cidadeValor);    
+    }else{
+        localStorage.setItem('cidade', cidadeValor);    
+    }
+        
         console.log(cidadeValor);
     });
 
