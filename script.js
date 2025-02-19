@@ -26,8 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 telefone: telefone
             }
         };
-
+        
+        msg.style.backgroundColor = "green";
+        msg.innerText = "Usuario cadastrado com sucesso! estamos te direcionando para o grupo de ofertas ...";
         msg.style.top = "0vw";
+        
         try {
             let response = await fetch("https://script.google.com/macros/s/AKfycbygeHW-hoqD53VLMDPklGF5IwCYVm9Ee0Mm6VPGpCBh1X6XUfGfCY58ksTDyGqhIMWO/exec", {
                 method: "POST",
@@ -74,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }else{
         msg.style.backgroundColor = "red";
-        msg.innerText = "Porfavor, Preencha todos os campos!";
+        msg.innerText = "Atenção, Preencha todos os campos!";
         msg.style.top = "0vw";
         setTimeout(() => {
         msg.style.top = "-7vw";
