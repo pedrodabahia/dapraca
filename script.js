@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         try {
-            let response = await fetch("https://script.google.com/macros/s/AKfycbxMiokNlu2x7nk5i6guUSMjcVdLZXEdg-U3Gq4GCKf_vsHr7hu_InrhIFd7yZZdr6Pt/exec", {
+            let response = await fetch("https://script.google.com/macros/s/AKfycbwKJqK9W1OTL-7yA0QCnjHK0EI4-AO745BNTfR1o_y_PHnERB5VBnALtL24DgFOl9cF/exec", {
                 method: "POST",
                 mode: "no-cors",
                 headers: { "Content-Type": "application/json" },
