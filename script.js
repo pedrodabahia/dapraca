@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             let result = await response.text();
             console.log("Resposta do servidor:", result);
+            console.log(data);
 
             if (response.ok) {
                 alert("Formulário enviado com sucesso!");
