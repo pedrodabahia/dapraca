@@ -94,6 +94,7 @@ var alturaPrimord = window.innerHeight;
 var msg = document.querySelector("#msg");
 
 if(larguraPrimord < alturaPrimord){ 
-    msg.style.width = "100vw";
-    msg.style.fontSize = "2vw";
+    msg.style.width = "60vw";
+    msg.style.left = "19vw"
+    msg.style.fontSize = "2.5vw";
 }
