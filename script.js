@@ -1,138 +1,52 @@
-const btn = document.querySelector('#btnForm');
-const cidade = document.querySelector('select');
-const formulario = document.querySelector('form');
-const politic = document.querySelector('#politicaPrivac a'); // Corrigido
-const frame = document.querySelector('.framePolitica');
-const fechar = document.querySelector(".feixar");
+document.addEventListener("DOMContentLoaded", function () {
+    var form = document.querySelector("form");
 
-
-    var form = document.querySelector('form');
-
-    // Lida com o evento de submit
-    form.addEventListener('submit', function (event) {
-        var cidadeValor = document.getElementById('cidade')?.value || ''; // Captura o valor da cidade
-        if(cidadeValor == "Itabatã"){ 
-        cidadeValor = "Itabata";
-        localStorage.setItem('cidade', cidadeValor);    
-    }else{
-        localStorage.setItem('cidade', cidadeValor);    
+    if (!form) {
+        console.error("Formulário não encontrado!");
+        return;
     }
-        
-        console.log(cidadeValor);
-    });
 
-        var timing;
-        const elementos = [];
-        const opacidade = [];
+    form.addEventListener("submit", async function (event) {
+        event.preventDefault(); // Evita que o formulário seja enviado mais de uma vez
 
-        elementos[0] = document.querySelector("#PostoDaMata");
-        elementos[1] = document.querySelector("#Itabata");
-        elementos[2] = document.querySelector("#Mucuri");
-        elementos[3] = document.querySelector("#Prado");
-        elementos[4] = document.querySelector("#Itamaraju");
+        var cidadeValor = document.getElementById("cidade")?.value || "";
 
-        opacidade[0] = document.querySelector("#opacPdm");
-        opacidade[1] = document.querySelector("#opacMuc");
-        opacidade[2] = document.querySelector("#opacItab");
-        opacidade[3] = document.querySelector("#opacPrad");
-        opacidade[4] = document.querySelector("#opacIta");
+        if (cidadeValor === "Itabatã") {
+            cidadeValor = "Itabata";
+        }
 
-        function sslider() {
-            var largura = window.innerWidth;
-            var altura = window.innerHeight;
-            const contentSlide = document.querySelector(".slidecontent");
+        localStorage.setItem("cidade", cidadeValor);
 
-            if (contentSlide) {
-                contentSlide.style.top = "1vw";
-                contentSlide.style.left = "15vw";
+        var nome = document.getElementById("nome")?.value || "Sem Nome";
+        var idade = document.getElementById("idade")?.value || "Sem Idade";
+
+        var data = {
+            data: {
+                nome: nome,
+                idade: idade,
+                cidade: cidadeValor
             }
+        };
 
-            clearInterval(timing);
+        try {
+            let response = await fetch("https://script.google.com/macros/s/AKfycbxMiokNlu2x7nk5i6guUSMjcVdLZXEdg-U3Gq4GCKf_vsHr7hu_InrhIFd7yZZdr6Pt/exec", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data)
+            });
 
-            if (largura < altura) {
-                for (let s = 0; s <= 4; s++) {
-                    if (elementos[s] && opacidade[s]) {
-                        elementos[s].style.width = "14vw";
-                        elementos[s].style.height = "23vw";
-                        elementos[s].style.marginTop = "-1.5vw";
-                        opacidade[s].style.width = "14vw";
-                        opacidade[s].style.height = "23vw";
-                        opacidade[s].style.marginTop = "0vw";
-                    }
-                }
+            let result = await response.text();
+            console.log("Resposta do servidor:", result);
 
-                if (contentSlide) {
-                    contentSlide.style.top = "-20vw";
-                    contentSlide.style.left = "0";
-                }
-
-                let i = 0;
-                timing = setInterval(() => {
-                    if (elementos[i] && opacidade[i]) {
-                        elementos[i].style.width = "17vw";
-                        elementos[i].style.height = "23vw";
-                        elementos[i].style.marginTop = "-1vw";
-                        opacidade[i].style.width = "14vw";
-                        opacidade[i].style.height = "23vw";
-                        opacidade[i].style.marginTop = "0vw";
-                    }
-
-                    i = (i + 1) % 5; // Reinicia o loop automaticamente
-
-                    if (elementos[i] && opacidade[i]) {
-                        elementos[i].style.width = "26vw";
-                        elementos[i].style.height = "31vw";
-                        elementos[i].style.marginTop = "-5vw";
-                        opacidade[i].style.width = "26vw";
-                        opacidade[i].style.height = "31vw";
-                        opacidade[i].style.marginTop = "-5vw";
-                    }
-                }, 3000);
+            if (response.ok) {
+                alert("Formulário enviado com sucesso!");
+                form.reset();
             } else {
-                for (let s = 0; s <= 4; s++) {
-                    if (elementos[s] && opacidade[s]) {
-                        elementos[s].style.width = "14vw";
-                        elementos[s].style.height = "16vw";
-                        elementos[s].style.marginTop = "-2vw";
-                        opacidade[s].style.width = "14vw";
-                        opacidade[s].style.height = "16vw";
-                    }
-                }
+                alert("Erro ao enviar. Tente novamente.");
             }
+        } catch (error) {
+            console.error("Erro ao enviar dados:", error);
+            alert("Erro de conexão. Tente novamente.");
         }
-
-
-
-        alert("Formulário enviado com sucesso!");
-   
-
-    // Manipulação do clique na política de privacidade
-    if (politic) {
-        politic.addEventListener('click', () => {
-            if (frame && window.getComputedStyle(frame).display === "none") {
-                frame.style.display = "block";
-            }
-
-            if (fechar) {
-                fechar.removeEventListener('click', fecharFrame);
-                fechar.addEventListener('click', fecharFrame);
-            }
-        });
-    }
-
-    function fecharFrame() {
-        if (frame) {
-            frame.style.display = "none";
-        }
-    }
-
-    // Evento de clique no botão
-
-    // Iniciar slider ao carregar a página
-    if (document.querySelector(".slidecontent")) {
-        sslider();
-        window.addEventListener("resize", sslider);
-    } else {
-        console.warn("Elementos do slider não encontrados!");
-    }
-
+    });
+});
