@@ -181,8 +181,9 @@ background-size: 240%;
     width:12.3vw;
     border-radius: none;
     margin-top: -0.3vw;
-    
 }
+.formulario .formContent form input#telefone{
+    margin-top: 0.3vw
 .formulario .formContent form input#idade{
 
     font-size: 1.5vw;
