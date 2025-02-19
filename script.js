@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         try {
             let response = await fetch("https://script.google.com/macros/s/AKfycbxMiokNlu2x7nk5i6guUSMjcVdLZXEdg-U3Gq4GCKf_vsHr7hu_InrhIFd7yZZdr6Pt/exec", {
                 method: "POST",
+                mode: "no-cors",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data)
             });
