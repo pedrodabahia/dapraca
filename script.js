@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 body: JSON.stringify(data)
             });
 
-            let result = await response.text();
-            console.log("Resposta do servidor:", result);
+
+
                             switch(data.data.cidade) {
           case "Posto da Mata":
             window.location.href = "https://chat.whatsapp.com/J7vSp3d4mwPBJaEmbStoPP";
