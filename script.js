@@ -38,13 +38,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
             let result = await response.text();
             console.log("Resposta do servidor:", result);
-            console.log(data);
+                            switch(data.cidade) {
+          case "Posto da Mata":
+            window.location.href = "https://chat.whatsapp.com/J7vSp3d4mwPBJaEmbStoPP";
+            localStorage.clear();
+            break;
+          case "Itabatã":
+            window.location.href = "https://chat.whatsapp.com/Gnc21qUogOa5NYGzR033sM";
+            localStorage.clear();
+            break;
+          case "Mucuri":
+            window.location.href = "https://chat.whatsapp.com/JVkyD6mW1dXKNvUDAmjGDy";
+            localStorage.clear();
+            break;
+          case "Prado":
+            window.location.href = "https://chat.whatsapp.com/KZOO4rSC85aIF465IRE8Pg";
+            localStorage.clear();
+            break;
+          case "Itamaraju":
+            window.location.href = "https://chat.whatsapp.com/GEz8Y8lv8iP199IG5WXQkr";
+            localStorage.clear();
+            break;
+        }
 
             if (response.ok) {
-                alert("Formulário enviado com sucesso!");
+                console.log("Formulário enviado com sucesso!");
                 form.reset();
             } else {
-                alert("Erro ao enviar. Tente novamente.");
+                console.log("Erro ao enviar. Tente novamente.");
             }
         } catch (error) {
             console.error("Erro ao enviar dados:", error);
