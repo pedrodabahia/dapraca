@@ -183,7 +183,7 @@ background-size: 240%;
     margin-top: -0.3vw;
 }
 .formulario .formContent form input#telefone{
-    margin-top: 0.3vw
+    margin-top: 0.3vw;}
 .formulario .formContent form input#idade{
 
     font-size: 1.5vw;
@@ -555,6 +555,12 @@ footer .logo{
         transition: 1s;
     }
   }@media screen and (min-height:780px) {
+
+        #msg{
+        width: 40vw;
+        left:29vw;
+        font-size: 2vw;
+    }
 
     .image{
         width: 45%;
