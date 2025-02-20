@@ -206,6 +206,9 @@ background-size: 240%;
     font-size: 0.8vw;
     margin: 1vw auto;
 }
+.formulario .formContent form #telefone{
+    margin:0.6vw;
+}
 .formulario .framePolitica{
     background-color: white;
     box-shadow:0px 0.5vw 2vw black ;
