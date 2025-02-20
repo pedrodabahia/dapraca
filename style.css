@@ -177,15 +177,13 @@ background-size: 240%;
 .formulario .formContent form input::placeholder{
     color: white;
 }
-.formulario .formContent form input#idade,.formulario .formContent form select{
+.formulario .formContent form input#data,.formulario .formContent form select{
     width:12.3vw;
     border-radius: none;
-    margin-top: -0.3vw;
+    
 }
-.formulario .formContent form input#telefone{
-    margin-top: 0.6vw;}
-.formulario .formContent form input#idade{
-
+.formulario .formContent form input#data{
+    padding: 1.36vw;
     font-size: 1.5vw;
     position:relative;
     top: -0.02vw
@@ -195,10 +193,6 @@ background-size: 240%;
     padding: 1.6vw;
     color: white;
     background-color: green;
-}
-
-.formulario .formContent form #politicaPrivacLink{
-    color: blue;
 }
 
 .formulario .formContent form #politicaPrivac{
@@ -289,61 +283,7 @@ footer .logo{
     margin: 2vw 0 0 4vw;
     background-repeat: no-repeat;
 }
-
-#msg{
-    width: 20vw;
-    position: fixed;
-    left:39vw;
-    padding: 1vw;
-    height: 5vw;
-    top: -7vw;
-    background-color: rgb(000, 170,000);
-    z-index: 1;
-    color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 900;
-    font-size:1.35vw;
-    text-align: center;
-    transition: 1s;
-}
-
-#loading{
-    position: relative;
-    background-color:none;
-    padding: 2vw;
-    width: 2vw;
-    height: 2vw;
-    left: 40vw;
-    z-index: 1;
-    text-align: center;
-    animation-name: pisca;
-    animation-duration: 0.7s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    border: 5px solid green;
-    border-top-color: transparent;
-    
-    border-radius: 100%;
-
-}
-@keyframes pisca{
-
-    0%{
-        transform: rotate(0deg);
-    }
-
-    100%{
-        transform: rotate(360deg);
-    }
-
-}
-
 @media screen and (max-width: 360px){
-    #msg{
-        width: 40vw;
-        left:29vw;
-        font-size: 2vw;
-    }
 
     .image{
         width: 45%;
@@ -392,7 +332,7 @@ footer .logo{
     .formulario .linha2Form{
         width: 77vw;
     }
-    .formulario .formContent form input#idade,.formulario .formContent form select{
+    .formulario .formContent form input#data,.formulario .formContent form select{
         width:36vw;
         margin: 0 0.1vw ;
         padding: 0vw 1.5vw;
@@ -400,7 +340,7 @@ footer .logo{
         font-size: 3vw;
         display: block;
     }
-    .formulario .formContent form input#idade{
+    .formulario .formContent form input#data{
 
         position:relative;
         color:white;
@@ -474,6 +414,7 @@ footer .logo{
         margin: 0 auto;
         position: relative;
         top: -20vw;
+        left: 0;
         justify-content: center;
         
         
@@ -556,12 +497,6 @@ footer .logo{
     }
   }@media screen and (min-height:780px) {
 
-        #msg{
-        width: 65vw;
-        left:29vw;
-        font-size: 2vw;
-    }
-
     .image{
         width: 45%;
         margin: 5% auto;
@@ -609,7 +544,7 @@ footer .logo{
     .formulario .linha2Form{
         width: 77vw;
     }
-    .formulario .formContent form input#idade,.formulario .formContent form select{
+    .formulario .formContent form input#data,.formulario .formContent form select{
         width:36vw;
         margin: 0 0.1vw ;
         padding: 0vw 1.5vw;
@@ -617,7 +552,7 @@ footer .logo{
         font-size: 3vw;
         display: block;
     }
-    .formulario .formContent form input#idade{
+    .formulario .formContent form input#data{
 
         position:relative;
         color:white;
@@ -776,7 +711,7 @@ footer .logo{
 @media screen and (min-height:600px) and (max-width:590px) {
 
     .image{
-        width: 65%;
+        width: 45%;
         margin: 5% auto;
     }
     .image img{
@@ -822,7 +757,7 @@ footer .logo{
     .formulario .linha2Form{
         width: 77vw;
     }
-    .formulario .formContent form input#idade,.formulario .formContent form select{
+    .formulario .formContent form input#data,.formulario .formContent form select{
         width:36vw;
         margin: 0 0.1vw ;
         padding: 0vw 1.5vw;
@@ -830,7 +765,7 @@ footer .logo{
         font-size: 3vw;
         display: block;
     }
-    .formulario .formContent form input#idade{
+    .formulario .formContent form input#data{
 
         position:relative;
         color:white;
